@@ -1,0 +1,116 @@
+import React from "react";
+import { Box, Fade, Typography } from "@mui/material";
+import image1 from "./image1.jpeg";
+import image2 from "./image2.jpeg";
+import image3 from "./image3.jpeg";
+import image4 from "./image4.jpeg";
+import linkedinLogo from "./linkedin-logo.png";
+
+export const ProjectInfo = () => {
+  return (
+    <Box>
+        {/* TEAM INFO */}
+      <Box sx={{ margin: "32px 8px", display: "flex", justifyContent: "center" }} >
+        <Box sx={{ display: "block", textAlign: "center", width: 550 }}>
+          <Typography variant="h3" color="white">CS 6150: DUCSS Team</Typography>
+          <Typography sx={{ textAlign: "center" }} variant="h5" color="gray">Members: Matthew Days, Diya Mitra, David Strube, Cid Khode</Typography>
+          <Box sx={{ display: "flex", justifyContent: "space-between", marginTop: 1, "* > img": { height: 100 }, "> :not(:last-child)": { marginRight: 3 } }}>
+            <Fade in timeout={3000}>
+              <Box sx={{ "> :last-child img": { marginTop: 1, height: 35 } }}>
+                <img src={image1} alt="Matthew Days" />
+                <Typography color="green">Matthew Days (Team Lead / Fullstack Developer)</Typography>
+                <a href="https://www.linkedin.com/in/matthew-days/" rel="noreferrer" target="_blank"><img src={linkedinLogo} alt="Matthew Days LinkedIn" /></a>
+              </Box>
+            </Fade>
+            <Fade in timeout={3000}>
+              <Box sx={{ "> :last-child img": { marginTop: 1, height: 35 } }}>
+                <img src={image2} alt="Diya Mitra" />
+                <Typography color="red">Diya Mitra (Fullstack Developer)</Typography>
+                <a href="https://www.linkedin.com/in/diya-mitra/" rel="noreferrer" target="_blank"><img src={linkedinLogo} alt="Diya Mitra LinkedIn" /></a>
+              </Box>
+            </Fade>
+            <Fade in timeout={3000}>
+              <Box sx={{ "> :last-child img": { marginTop: 1, height: 35 } }}>
+                <img src={image3} alt="David Strube" />
+                <Typography color="blue">David Strube (Fullstack Developer)</Typography>
+                <a href="https://www.linkedin.com/in/david-strube-0/" rel="noreferrer" target="_blank"><img src={linkedinLogo} alt="David Strube LinkedIn" /></a>
+              </Box>
+            </Fade>
+            <Fade in timeout={3000}>
+              <Box sx={{ "> :last-child img": { marginTop: 1, height: 35 } }}>
+                <img src={image4} alt="Cid Khode" />
+                <Typography color="yellow">Cid Khode (Fullstack Developer)</Typography>
+                <a href="https://www.linkedin.com/in/chidanand-khode/" rel="noreferrer" target="_blank"><img src={linkedinLogo} alt="Cid Khode LinkedIn" /></a>
+              </Box>
+            </Fade>
+          </Box>
+        </Box>
+      </Box>
+      {/* PROJECT INFO */}
+      <Typography color="white" textAlign="center">PROJECT INFO</Typography>
+      <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px blue", borderRadius: 5 }}>
+        <Typography color="gray">
+          Our misson is to create an Android application that measures a user"s GAIT over a short period of time. Measuring GAIT is an important
+          part of detecting diabetic foot ulcers. Patients with Diabetes may lose sensation in their feet, so ulcers can easily go undetected
+          and cause further complications. By incorporating motion sensors native to Android smartphones, our team"s goal is to build an application
+          that detects walking pattern abnormalities in a user and then uses that to determine if there could be detection of an ulcer.
+        </Typography>
+      </Box>
+      {/* APP UI / UX */}
+      <Typography color="white" textAlign="center">APP UI / UX & OVERALL GOALS</Typography>
+      <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px purple", borderRadius: 5 }}>
+        <Typography color="gray">
+          Our team is working diligently and hard to collaborate with our mentors and sponsors to curate a design conducive to achieving our desired
+          goals. After some initial brainstorming, we came up with the following ideas:
+          <ul>
+            <li>Start page can show a big circle button that says “Start”</li>
+            <li>
+              Upon clicking start, the instructions would show on the screen and tell the user that they need to keep their phone in their pocket and
+              walk in a straight line for 1 minute
+            </li>
+            <li>At the end of the test, the phone would vibrate 2 times to indicate that the test is done, since the user wouldn"t know otherwise</li>
+            <li>Then, the user would be brought to a metrics page of some sort (still brainstorming what it would look like)</li>
+            <li>This new page would show detailed metrics of GAIT measurements, cadence, and total steps</li>
+            <li>The GAIT itself can be calculated using accelerometers in the X, Y, and Z directions which we can leverage using Android SDKs</li>
+            <li>Analyzing the graphs in these three orientations would tell us variabilities and instabilities in cadence and speed</li>
+            <li>We can use this information to calculate the proximate GAIT and calculate it</li>
+          </ul>
+        </Typography>
+      </Box>
+      {/* USERS INFO */}
+      <Typography color="white" textAlign="center">TARGET USERS</Typography>
+      <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px orange", borderRadius: 5 }}>
+        <Typography color="gray">
+          Target users of our app will mostly be seniors. Because of this, we want to keep the app as minimally confusing as possible. The user
+          interface shouldn"t be overly complicated and overwhelming to the user. We aim to design our user interface with simplicity in mind,
+          ensuring ease of use for such users who may be less familiar with smartphone technology. Furthermore, by keeping the interface clean and
+          intuitive, we prioritize creating a positive user experience that encourages engagement and avoids overwhelming any demographic. Our goal
+          is to make sure everyone can comfortably navigate the app without frustration or confusion, because otherwise, they may be more inclined to
+          give up on the application and no longer use it. This defeats the purpose of trying to detect GAIT abnormalities and the detection of ulcers.
+        </Typography>
+      </Box>
+      { /* LIGHTHOUSE SCORES */}
+      <Typography color="white" textAlign="center">LIGHTHOUSE SCORES</Typography>
+      <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px white", borderRadius: 5, "> :not(:last-child)": { marginRight: 4 } }}>
+        <Box sx={{ ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px green" } }}>
+          <Typography variant="h6" color="green">Performance</Typography>
+          <Typography color="green">99</Typography>
+        </Box>
+        <Box sx={{ ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px orange" } }}>
+          <Typography variant="h6" color="orange">Accessibility</Typography>
+          <Typography color="orange">88</Typography>
+        </Box>
+        <Box sx={{ ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px green" } }}>
+          <Typography variant="h6" color="green">Best Practices</Typography>
+          <Typography color="green">95</Typography>
+        </Box>
+        <Box sx={{ ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px green" } }}>
+          <Typography variant="h6" color="green">SEO</Typography>
+          <Typography color="green">100</Typography>
+        </Box>
+      </Box>
+    </Box>
+  )
+};
+
+export default ProjectInfo;
