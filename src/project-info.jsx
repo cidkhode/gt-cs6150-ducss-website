@@ -68,12 +68,28 @@ export const ProjectInfo = () => {
               Upon clicking start, the instructions would show on the screen and tell the user that they need to keep their phone in their pocket and
               walk in a straight line for 1 minute
             </li>
-            <li>At the end of the test, the phone would vibrate 2 times to indicate that the test is done, since the user wouldn"t know otherwise</li>
+            <li>At the end of the test, the phone would vibrate 2 times to indicate that the test is done, allowing the user to focus on a steady walking cadence rather than manually checking the screen</li>
             <li>Then, the user would be brought to a metrics page of some sort (still brainstorming what it would look like)</li>
-            <li>This new page would show detailed metrics of GAIT measurements, cadence, and total steps</li>
-            <li>The GAIT itself can be calculated using accelerometers in the X, Y, and Z directions which we can leverage using Android SDKs</li>
-            <li>Analyzing the graphs in these three orientations would tell us variabilities and instabilities in cadence and speed</li>
-            <li>We can use this information to calculate the proximate GAIT and calculate it</li>
+            <li>This new page would show detailed metrics of GAIT measurements, which can include raw linear acceleration of the participant's movements at the front pockets in the X, Y, and Z directions</li>
+            <li>The GAIT itself can be calculated using the tri-axial accelerometer which we can leverage using Android SDKs allowing us to eliminate gravitational acceleration</li>
+            <li>
+              Through signal processing and data analysis strategies, the following gait metrics can be calculated:
+              <ul>
+                <li>Peak Frequency: gait cycle - the time taken to complete one step</li>
+                <li>Root Mean Square: degree of gait instability - indicates limping or other abnormalities consistent with diabetic foot injuries</li>
+                <li>Autocorrelation Peak: degree of gait balance</li>
+                <li>Coefficient of Variance: variability in time taken to complete consecutive footsteps</li>
+              </ul>
+            </li>
+            <li>We can use this information to determine the need for correctional action to prevent further exacerbation of diabetic foot injuries.</li>
+            <li>
+              Potential issues:
+              <ul>
+                <li>Inconsistent sampling rate: smartphones can have a variable sampling rate due to simultaneous background processes</li>
+                <ul><li>We can mitigate this by collecting data over a longer period of time and across both legs. This will allow us to validate the data</li></ul>
+                <li>Our developer testing may not accurately represent true diabetic gait inconsistencies</li>
+              </ul>
+            </li>
           </ul>
         </Typography>
       </Box>
