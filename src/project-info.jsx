@@ -13,7 +13,7 @@ export const ProjectInfo = () => {
       <Box sx={{ margin: "32px 8px", display: "flex", justifyContent: "center" }} >
         <Box sx={{ display: "block", textAlign: "center", width: 550 }}>
           <Typography variant="h3" color="white">CS 6150: DUCSS Team</Typography>
-          <Typography sx={{ textAlign: "center" }} variant="h5" color="gray">Members: Matthew Days, Diya Mitra, David Strube, Cid Khode</Typography>
+          <Typography sx={{ textAlign: "center" }} variant="h5" color="white">Members: Matthew Days, Diya Mitra, David Strube, Cid Khode</Typography>
           <Box sx={{ display: "flex", justifyContent: "space-between", marginTop: 1, "* > img": { height: 100 }, "> :not(:last-child)": { marginRight: 3 } }}>
             <Fade in timeout={3000}>
               <Box sx={{ "> :last-child img": { marginTop: 1, height: 35 } }}>
@@ -49,7 +49,7 @@ export const ProjectInfo = () => {
       {/* PROJECT INFO */}
       <Typography color="white" textAlign="center">PROJECT INFO</Typography>
       <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px blue", borderRadius: 5 }}>
-        <Typography color="gray">
+        <Typography color="white">
           Our misson is to create an Android application that measures a user"s GAIT over a short period of time. Measuring GAIT is an important
           part of detecting diabetic foot ulcers. Patients with Diabetes may lose sensation in their feet, so ulcers can easily go undetected
           and cause further complications. By incorporating motion sensors native to Android smartphones, our team"s goal is to build an application
@@ -59,7 +59,7 @@ export const ProjectInfo = () => {
       {/* APP UI / UX */}
       <Typography color="white" textAlign="center">APP UI / UX & OVERALL GOALS</Typography>
       <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px purple", borderRadius: 5 }}>
-        <Typography color="gray">
+        <Typography color="white">
           Our team is working diligently and hard to collaborate with our mentors and sponsors to curate a design conducive to achieving our desired
           goals. After some initial brainstorming, we came up with the following ideas:
           <ul>
@@ -96,7 +96,7 @@ export const ProjectInfo = () => {
       {/* USERS INFO */}
       <Typography color="white" textAlign="center">TARGET USERS</Typography>
       <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px orange", borderRadius: 5 }}>
-        <Typography color="gray">
+        <Typography color="white">
           Target users of our app will mostly be seniors. Because of this, we want to keep the app as minimally confusing as possible. The user
           interface shouldn"t be overly complicated and overwhelming to the user. We aim to design our user interface with simplicity in mind,
           ensuring ease of use for such users who may be less familiar with smartphone technology. Furthermore, by keeping the interface clean and
@@ -104,6 +104,12 @@ export const ProjectInfo = () => {
           is to make sure everyone can comfortably navigate the app without frustration or confusion, because otherwise, they may be more inclined to
           give up on the application and no longer use it. This defeats the purpose of trying to detect GAIT abnormalities and the detection of ulcers.
         </Typography>
+      </Box>
+      {/* VIDEO PRESENTATION */}
+      <Typography color="white" textAlign="center">INITIAL DEMO</Typography>
+      <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px red", borderRadius: 5, ">:first-of-type": { marginRight: 4 } }}>
+        <a href="https://teams.microsoft.com/l/message/19:6071b1317a274edb86b22cc883e99746@thread.v2/1708304315668?context=%7B%22contextType%22%3A%22chat%22%7D" target="_blank" rel="noreferrer"><Typography>Initial Demo Slides</Typography></a>
+        <a href="https://drive.google.com/file/d/1w-d3IL6mf8xQLtHtfiBKxSjq86FJ_dpU/view?usp=sharing" target="_blank" rel="noreferrer"><Typography>Initial Demo Presentation</Typography></a>
       </Box>
       { /* LIGHTHOUSE SCORES */}
       <Typography color="white" textAlign="center">LIGHTHOUSE SCORES</Typography>
