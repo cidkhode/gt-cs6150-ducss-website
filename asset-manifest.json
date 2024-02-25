@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/gt-cs6150-ducss-website/static/css/main.52d2fc54.css",
-    "main.js": "/gt-cs6150-ducss-website/static/js/main.999da104.js",
+    "main.css": "/gt-cs6150-ducss-website/static/css/main.f25b4d4f.css",
+    "main.js": "/gt-cs6150-ducss-website/static/js/main.4284e9b9.js",
     "static/js/592.f860da7e.chunk.js": "/gt-cs6150-ducss-website/static/js/592.f860da7e.chunk.js",
     "static/media/image4.jpeg": "/gt-cs6150-ducss-website/static/media/image4.231802ad7bd32cccf424.jpeg",
     "static/media/linkedin-logo.png": "/gt-cs6150-ducss-website/static/media/linkedin-logo.66ffd29ac1bb3de67249.png",
     "index.html": "/gt-cs6150-ducss-website/index.html",
-    "main.52d2fc54.css.map": "/gt-cs6150-ducss-website/static/css/main.52d2fc54.css.map",
-    "main.999da104.js.map": "/gt-cs6150-ducss-website/static/js/main.999da104.js.map",
+    "main.f25b4d4f.css.map": "/gt-cs6150-ducss-website/static/css/main.f25b4d4f.css.map",
+    "main.4284e9b9.js.map": "/gt-cs6150-ducss-website/static/js/main.4284e9b9.js.map",
     "592.f860da7e.chunk.js.map": "/gt-cs6150-ducss-website/static/js/592.f860da7e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52d2fc54.css",
-    "static/js/main.999da104.js"
+    "static/css/main.f25b4d4f.css",
+    "static/js/main.4284e9b9.js"
   ]
 }
