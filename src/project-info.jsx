@@ -12,27 +12,27 @@ export const ProjectInfo = () => {
         {/* TEAM INFO */}
       <Box sx={{ margin: "32px 8px", display: "flex", justifyContent: "center" }} >
         <Box sx={{ display: "block", textAlign: "center", width: 550 }}>
-          <Typography variant="h3" color="white">CS 6150: DUCSS Team</Typography>
+          <Typography variant="h4" color="white">CS 6150: DUCSS Team</Typography>
           <Typography sx={{ textAlign: "center" }} variant="h5" color="white">Members: Matthew Days, Diya Mitra, David Strube, Cid Khode</Typography>
           <Box sx={{ display: "flex", justifyContent: "space-between", marginTop: 1, "* > img": { height: 100 }, "> :not(:last-child)": { marginRight: 3 } }}>
             <Fade in timeout={3000}>
               <Box sx={{ "> :last-child img": { marginTop: 1, height: 35 } }}>
                 <img src={image1} alt="Matthew Days" />
-                <Typography color="green">Matthew Days (Team Lead / Fullstack Developer)</Typography>
+                <Typography color="#38FF38">Matthew Days (Team Lead / Fullstack Developer)</Typography>
                 <a href="https://www.linkedin.com/in/matthew-days/" rel="noreferrer" target="_blank"><img src={linkedinLogo} alt="Matthew Days LinkedIn" /></a>
               </Box>
             </Fade>
             <Fade in timeout={3000}>
               <Box sx={{ "> :last-child img": { marginTop: 1, height: 35 } }}>
                 <img src={image2} alt="Diya Mitra" />
-                <Typography color="red">Diya Mitra (Fullstack Developer)</Typography>
+                <Typography color="#FF6B6B">Diya Mitra (Fullstack Developer)</Typography>
                 <a href="https://www.linkedin.com/in/diya-mitra/" rel="noreferrer" target="_blank"><img src={linkedinLogo} alt="Diya Mitra LinkedIn" /></a>
               </Box>
             </Fade>
             <Fade in timeout={3000}>
               <Box sx={{ "> :last-child img": { marginTop: 1, height: 35 } }}>
                 <img src={image3} alt="David Strube" />
-                <Typography color="blue">David Strube (Fullstack Developer)</Typography>
+                <Typography color="#66A3F0">David Strube (Fullstack Developer)</Typography>
                 <a href="https://www.linkedin.com/in/david-strube-0/" rel="noreferrer" target="_blank"><img src={linkedinLogo} alt="David Strube LinkedIn" /></a>
               </Box>
             </Fade>
@@ -48,7 +48,7 @@ export const ProjectInfo = () => {
       </Box>
       {/* PROJECT INFO */}
       <Typography color="white" textAlign="center">PROJECT INFO</Typography>
-      <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px blue", borderRadius: 5 }}>
+      <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px #66A3F0", borderRadius: 5 }}>
         <Typography color="white">
           Our misson is to create an Android application that measures a user"s GAIT over a short period of time. Measuring GAIT is an important
           part of detecting diabetic foot ulcers. Patients with Diabetes may lose sensation in their feet, so ulcers can easily go undetected
@@ -59,8 +59,8 @@ export const ProjectInfo = () => {
       {/* APP UI / UX */}
       <Typography color="white" textAlign="center">APP UI / UX & OVERALL GOALS</Typography>
       <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px purple", borderRadius: 5 }}>
-        <Typography color="white">
-          Our team is working diligently and hard to collaborate with our mentors and sponsors to curate a design conducive to achieving our desired
+        <Typography component="div" color="white">
+          Our team is working diligently and hard to collaborate with our mentors and sponsors to curate a design conducive to achieving our desi#FF6B6B
           goals. After some initial brainstorming, we came up with the following ideas:
           <ul>
             <li>Start page can show a big circle button that says “Start”</li>
@@ -74,6 +74,8 @@ export const ProjectInfo = () => {
             <li>The GAIT itself can be calculated using the tri-axial accelerometer which we can leverage using Android SDKs allowing us to eliminate gravitational acceleration</li>
             <li>
               Through signal processing and data analysis strategies, the following gait metrics can be calculated:
+              </li>
+            <li style={{ listStyleType: 'none' }}>
               <ul>
                 <li>Peak Frequency: gait cycle - the time taken to complete one step</li>
                 <li>Root Mean Square: degree of gait instability - indicates limping or other abnormalities consistent with diabetic foot injuries</li>
@@ -84,9 +86,11 @@ export const ProjectInfo = () => {
             <li>We can use this information to determine the need for correctional action to prevent further exacerbation of diabetic foot injuries.</li>
             <li>
               Potential issues:
+            </li>
+            <li style={{ listStyleType: 'none' }}>
               <ul>
                 <li>Inconsistent sampling rate: smartphones can have a variable sampling rate due to simultaneous background processes</li>
-                <ul><li>We can mitigate this by collecting data over a longer period of time and across both legs. This will allow us to validate the data</li></ul>
+                <li style={{ listStyleType: 'none' }}><ul><li>We can mitigate this by collecting data over a longer period of time and across both legs. This will allow us to validate the data</li></ul></li>
                 <li>Our developer testing may not accurately represent true diabetic gait inconsistencies</li>
               </ul>
             </li>
@@ -107,28 +111,28 @@ export const ProjectInfo = () => {
       </Box>
       {/* VIDEO PRESENTATION */}
       <Typography color="white" textAlign="center">INITIAL DEMO</Typography>
-      <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px red", borderRadius: 5, ">:first-of-type": { marginRight: 4 } }}>
-        <a href="https://teams.microsoft.com/l/message/19:6071b1317a274edb86b22cc883e99746@thread.v2/1708304315668?context=%7B%22contextType%22%3A%22chat%22%7D" target="_blank" rel="noreferrer"><Typography>Initial Demo Slides</Typography></a>
-        <a href="https://drive.google.com/file/d/1w-d3IL6mf8xQLtHtfiBKxSjq86FJ_dpU/view?usp=sharing" target="_blank" rel="noreferrer"><Typography>Initial Demo Presentation</Typography></a>
+      <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px #FF6B6B", borderRadius: 5, "> a": { textDecorationColor: "#66A3F0" }, ">:first-of-type": { marginRight: 4 } }}>
+        <a href="https://teams.microsoft.com/l/message/19:6071b1317a274edb86b22cc883e99746@thread.v2/1708304315668?context=%7B%22contextType%22%3A%22chat%22%7D" target="_blank" rel="noreferrer"><Typography color="#66A3F0">Initial Demo Slides</Typography></a>
+        <a href="https://drive.google.com/file/d/1w-d3IL6mf8xQLtHtfiBKxSjq86FJ_dpU/view?usp=sharing" target="_blank" rel="noreferrer"><Typography color="#66A3F0">Initial Demo Presentation</Typography></a>
       </Box>
       { /* LIGHTHOUSE SCORES */}
       <Typography color="white" textAlign="center">LIGHTHOUSE SCORES</Typography>
       <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px white", borderRadius: 5, "> :not(:last-child)": { marginRight: 4 } }}>
-        <Box sx={{ ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px green" } }}>
-          <Typography variant="h6" color="green">Performance</Typography>
-          <Typography color="green">99</Typography>
+        <Box sx={{ ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px #38FF38" } }}>
+          <Typography variant="h6" color="#38FF38">Performance</Typography>
+          <Typography color="#38FF38">100</Typography>
         </Box>
-        <Box sx={{ ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px orange" } }}>
-          <Typography variant="h6" color="orange">Accessibility</Typography>
-          <Typography color="orange">88</Typography>
+        <Box sx={{ ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px #38FF38" } }}>
+          <Typography variant="h6" color="#38FF38">Accessibility</Typography>
+          <Typography color="#38FF38">100</Typography>
         </Box>
-        <Box sx={{ ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px green" } }}>
-          <Typography variant="h6" color="green">Best Practices</Typography>
-          <Typography color="green">95</Typography>
+        <Box sx={{ ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px #38FF38" } }}>
+          <Typography variant="h6" color="#38FF38">Best Practices</Typography>
+          <Typography color="#38FF38">100</Typography>
         </Box>
-        <Box sx={{ ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px green" } }}>
-          <Typography variant="h6" color="green">SEO</Typography>
-          <Typography color="green">100</Typography>
+        <Box sx={{ ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px #38FF38" } }}>
+          <Typography variant="h6" color="#38FF38">SEO</Typography>
+          <Typography color="#38FF38">100</Typography>
         </Box>
       </Box>
     </Box>
