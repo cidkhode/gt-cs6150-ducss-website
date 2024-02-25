@@ -11,36 +11,36 @@ export const ProjectInfo = () => {
     <Box>
         {/* TEAM INFO */}
       <Box sx={{ margin: "32px 8px", display: "flex", justifyContent: "center" }} >
-        <Box sx={{ display: "block", textAlign: "center", width: 550 }}>
+        <Box sx={{ display: "block", textAlign: "center", width: '100%' }}>
           <Typography variant="h4" color="white">CS 6150: DUCSS Team</Typography>
           <Typography sx={{ textAlign: "center" }} variant="h5" color="white">Members: Matthew Days, Diya Mitra, David Strube, Cid Khode</Typography>
-          <Box sx={{ display: "flex", justifyContent: "space-between", marginTop: 1, "* > img": { height: 100 }, "> :not(:last-child)": { marginRight: 3 } }}>
-            <Fade in timeout={3000}>
-              <Box sx={{ "> :last-child img": { marginTop: 1, height: 35 } }}>
+          <Box sx={{ display: "inline", justifyContent: "space-between", marginTop: 1, "* > img": { height: 50 }, "> :not(:last-child)": { marginRight: 3 } }}>
+            <Fade in timeout={3000} sx={{ width: 'min-content', display: 'inline-block' }}>
+              <Box>
                 <img src={image1} alt="Matthew Days" />
-                <Typography color="#38FF38">Matthew Days (Team Lead / Fullstack Developer)</Typography>
-                <a href="https://www.linkedin.com/in/matthew-days/" rel="noreferrer" target="_blank"><img src={linkedinLogo} alt="Matthew Days LinkedIn" /></a>
+                <Typography sx={{ minHeight: 120 }} color="#38FF38">Matthew Days (Team Lead / Fullstack Developer)</Typography>
+                <a href="https://www.linkedin.com/in/matthew-days/" rel="noreferrer" target="_blank"><img style={{ marginTop: 4, height: 50 }} src={linkedinLogo} alt="Matthew Days LinkedIn" /></a>
               </Box>
             </Fade>
-            <Fade in timeout={3000}>
-              <Box sx={{ "> :last-child img": { marginTop: 1, height: 35 } }}>
+            <Fade in timeout={3000} sx={{ width: 'min-content', display: 'inline-block' }}>
+              <Box>
                 <img src={image2} alt="Diya Mitra" />
-                <Typography color="#FF6B6B">Diya Mitra (Fullstack Developer)</Typography>
-                <a href="https://www.linkedin.com/in/diya-mitra/" rel="noreferrer" target="_blank"><img src={linkedinLogo} alt="Diya Mitra LinkedIn" /></a>
+                <Typography sx={{ minHeight: 120 }} color="#FF6B6B">Diya Mitra (Fullstack Developer)</Typography>
+                <a href="https://www.linkedin.com/in/diya-mitra/" rel="noreferrer" target="_blank"><img style={{ marginTop: 4, height: 50 }} src={linkedinLogo} alt="Diya Mitra LinkedIn" /></a>
               </Box>
             </Fade>
-            <Fade in timeout={3000}>
-              <Box sx={{ "> :last-child img": { marginTop: 1, height: 35 } }}>
+            <Fade in timeout={3000} sx={{ width: 'min-content', display: 'inline-block' }}>
+              <Box>
                 <img src={image3} alt="David Strube" />
-                <Typography color="#66A3F0">David Strube (Fullstack Developer)</Typography>
-                <a href="https://www.linkedin.com/in/david-strube-0/" rel="noreferrer" target="_blank"><img src={linkedinLogo} alt="David Strube LinkedIn" /></a>
+                <Typography sx={{ minHeight: 120 }} color="#66A3F0">David Strube (Fullstack Developer)</Typography>
+                <a href="https://www.linkedin.com/in/david-strube-0/" rel="noreferrer" target="_blank"><img style={{ marginTop: 4, height: 50 }} src={linkedinLogo} alt="David Strube LinkedIn" /></a>
               </Box>
             </Fade>
-            <Fade in timeout={3000}>
-              <Box sx={{ "> :last-child img": { marginTop: 1, height: 35 } }}>
+            <Fade in timeout={3000} sx={{ width: 'min-content', display: 'inline-block' }}>
+              <Box>
                 <img src={image4} alt="Cid Khode" />
-                <Typography color="yellow">Cid Khode (Fullstack Developer)</Typography>
-                <a href="https://www.linkedin.com/in/chidanand-khode/" rel="noreferrer" target="_blank"><img src={linkedinLogo} alt="Cid Khode LinkedIn" /></a>
+                <Typography sx={{ minHeight: 120 }} color="yellow">Cid Khode (Fullstack Developer)</Typography>
+                <a href="https://www.linkedin.com/in/chidanand-khode/" rel="noreferrer" target="_blank"><img style={{ marginTop: 4, height: 50 }} src={linkedinLogo} alt="Cid Khode LinkedIn" /></a>
               </Box>
             </Fade>
           </Box>
@@ -117,20 +117,20 @@ export const ProjectInfo = () => {
       </Box>
       { /* LIGHTHOUSE SCORES */}
       <Typography color="white" textAlign="center">LIGHTHOUSE SCORES</Typography>
-      <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px white", borderRadius: 5, "> :not(:last-child)": { marginRight: 4 } }}>
-        <Box sx={{ ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px #38FF38" } }}>
+      <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", textAlign: "center", padding: 2, border: "solid 2px white", borderRadius: 5, "> :not(:last-child)": { marginRight: 4 } }}>
+        <Box sx={{ display: "inline-block", ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px #38FF38" } }}>
           <Typography variant="h6" color="#38FF38">Performance</Typography>
           <Typography color="#38FF38">100</Typography>
         </Box>
-        <Box sx={{ ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px #38FF38" } }}>
+        <Box sx={{ display: "inline-block", ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px #38FF38" } }}>
           <Typography variant="h6" color="#38FF38">Accessibility</Typography>
           <Typography color="#38FF38">100</Typography>
         </Box>
-        <Box sx={{ ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px #38FF38" } }}>
+        <Box sx={{ display: "inline-block", ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px #38FF38" } }}>
           <Typography variant="h6" color="#38FF38">Best Practices</Typography>
           <Typography color="#38FF38">100</Typography>
         </Box>
-        <Box sx={{ ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px #38FF38" } }}>
+        <Box sx={{ display: "inline-block", ">: first-of-type": { textAlign: "center" }, "> :last-child": { width: "min-content", margin: "0 auto", padding: 3, borderRadius: 10, border: "solid 3px #38FF38" } }}>
           <Typography variant="h6" color="#38FF38">SEO</Typography>
           <Typography color="#38FF38">100</Typography>
         </Box>
