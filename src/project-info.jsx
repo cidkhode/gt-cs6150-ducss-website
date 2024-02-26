@@ -18,28 +18,28 @@ export const ProjectInfo = () => {
             <Fade in timeout={3000} sx={{ width: 'min-content', display: 'inline-block' }}>
               <Box>
                 <img src={image1} alt="Matthew Days" />
-                <Typography sx={{ minHeight: 120 }} color="#38FF38">Matthew Days (Team Lead / Fullstack Developer)</Typography>
+                <Typography sx={{ minHeight: 145 }} color="#38FF38">Matthew Days (Team Lead / Fullstack Developer)</Typography>
                 <a href="https://www.linkedin.com/in/matthew-days/" rel="noreferrer" target="_blank"><img style={{ marginTop: 4, height: 50 }} src={linkedinLogo} alt="Matthew Days LinkedIn" /></a>
               </Box>
             </Fade>
             <Fade in timeout={3000} sx={{ width: 'min-content', display: 'inline-block' }}>
               <Box>
                 <img src={image2} alt="Diya Mitra" />
-                <Typography sx={{ minHeight: 120 }} color="#FF6B6B">Diya Mitra (Fullstack Developer)</Typography>
+                <Typography sx={{ minHeight: 145 }} color="#FF6B6B">Diya Mitra (Fullstack Developer)</Typography>
                 <a href="https://www.linkedin.com/in/diya-mitra/" rel="noreferrer" target="_blank"><img style={{ marginTop: 4, height: 50 }} src={linkedinLogo} alt="Diya Mitra LinkedIn" /></a>
               </Box>
             </Fade>
             <Fade in timeout={3000} sx={{ width: 'min-content', display: 'inline-block' }}>
               <Box>
                 <img src={image3} alt="David Strube" />
-                <Typography sx={{ minHeight: 120 }} color="#66A3F0">David Strube (Fullstack Developer)</Typography>
+                <Typography sx={{ minHeight: 145 }} color="#66A3F0">David Strube (Fullstack Developer)</Typography>
                 <a href="https://www.linkedin.com/in/david-strube-0/" rel="noreferrer" target="_blank"><img style={{ marginTop: 4, height: 50 }} src={linkedinLogo} alt="David Strube LinkedIn" /></a>
               </Box>
             </Fade>
             <Fade in timeout={3000} sx={{ width: 'min-content', display: 'inline-block' }}>
               <Box>
                 <img src={image4} alt="Cid Khode" />
-                <Typography sx={{ minHeight: 120 }} color="yellow">Cid Khode (Fullstack Developer)</Typography>
+                <Typography sx={{ minHeight: 145 }} color="yellow">Cid Khode (Fullstack Developer)</Typography>
                 <a href="https://www.linkedin.com/in/chidanand-khode/" rel="noreferrer" target="_blank"><img style={{ marginTop: 4, height: 50 }} src={linkedinLogo} alt="Cid Khode LinkedIn" /></a>
               </Box>
             </Fade>
