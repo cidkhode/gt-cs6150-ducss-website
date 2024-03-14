@@ -50,7 +50,7 @@ export const ProjectInfo = () => {
       <Typography color="white" textAlign="center">PROJECT INFO</Typography>
       <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px #66A3F0", borderRadius: 5 }}>
         <Typography color="white">
-          Our misson is to create an Android application that measures a user"s GAIT over a short period of time. Measuring GAIT is an important
+          Our misson is to create an Android application that measures a user's GAIT over a short period of time. Measuring GAIT is an important
           part of detecting diabetic foot ulcers. Patients with Diabetes may lose sensation in their feet, so ulcers can easily go undetected
           and cause further complications. By incorporating motion sensors native to Android smartphones, our team"s goal is to build an application
           that detects walking pattern abnormalities in a user and then uses that to determine if there could be detection of an ulcer.
