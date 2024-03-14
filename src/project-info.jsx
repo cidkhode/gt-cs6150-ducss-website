@@ -46,6 +46,18 @@ export const ProjectInfo = () => {
           </Box>
         </Box>
       </Box>
+      {/* PEER EVALUTATIONS */}
+      <Typography color="white" textAlign="center">PEER EVALUATIONS</Typography>
+      <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px yellow", borderRadius: 5, "> a": { textDecorationColor: "#66A3F0" }, ">:first-of-type": { marginRight: 4 } }}>
+        <Typography color="white">
+          If you DO have an Android device available, open the SURVEY, INSTRUCTIONS and APK(GOOGLE DRIVE) links below and follow their instructions to complete the tasks for the survey.
+          If you DO NOT have an Android, click the SURVEY link only, watch the screen recordings of the task, and use those videos to inform your answers for the survey.
+          NOTE: No account credentials are needed for this peer evaluation.
+        </Typography>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScpDeEqEgLF8zU9FUKQtdtqzXBGDuoIjrcJZbs90JnK5VzmmA/viewform?usp=sf_link" target="_blank" rel="noreferrer"><Typography color="#66A3F0">SURVEY</Typography></a>
+        <a href="https://docs.google.com/document/d/17OCxllCIsq8DLwdlY5mLHt6PFu_ZsfzrL3y76MPJcrA/edit?usp=sharing" target="_blank" rel="noreferrer"><Typography color="#66A3F0">APK INSTALLATION INSTRUCTIONS</Typography></a>
+        <a href="https://drive.google.com/file/d/18BEyvBTfkBtUKH3eoEkgfioIkBFH2uMV/view?usp=drive_link" target="_blank" rel="noreferrer"><Typography color="#66A3F0">APK(GOOGLE DRIVE)</Typography></a>
+      </Box>
       {/* PROJECT INFO */}
       <Typography color="white" textAlign="center">PROJECT INFO</Typography>
       <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px #66A3F0", borderRadius: 5 }}>
