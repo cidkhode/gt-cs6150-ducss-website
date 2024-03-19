@@ -58,6 +58,23 @@ export const ProjectInfo = () => {
         <a href="https://docs.google.com/document/d/17OCxllCIsq8DLwdlY5mLHt6PFu_ZsfzrL3y76MPJcrA/edit?usp=sharing" target="_blank" rel="noreferrer"><Typography color="#66A3F0">APK INSTALLATION INSTRUCTIONS</Typography></a>
         <a href="https://drive.google.com/file/d/18BEyvBTfkBtUKH3eoEkgfioIkBFH2uMV/view?usp=drive_link" target="_blank" rel="noreferrer"><Typography color="#66A3F0">APK(GOOGLE DRIVE)</Typography></a>
       </Box>
+
+      {/* WEEKLY TEAM UPDATE */}
+      <Typography color="white" textAlign="center">WEEKLY TEAM UPDATE</Typography>
+      <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px green", borderRadius: 5, "> a": { textDecorationColor: "#66A3F0" }, ">:first-of-type": { marginRight: 4 } }}>
+      <Typography component="div" color="white">
+          This week our team is working towards:
+          <ul>
+            <li><s>CSV Data Export</s></li>
+            <li><s>Step counter first implementation</s></li>
+            <li><s>Home screen</s></li>
+            <li>Template visualization comparing most recent collection against healthy baseline</li>
+            <li>First cut at Suggested Notes for Doctor's Visit</li>
+            <li>Addressing feedback received in surveys</li>
+          </ul>
+        </Typography>
+      </Box>
+
       {/* PROJECT INFO */}
       <Typography color="white" textAlign="center">PROJECT INFO</Typography>
       <Box sx={{ margin: "8px 8px 16px", justifyContent: "center", display: "flex", padding: 2, border: "solid 2px #66A3F0", borderRadius: 5 }}>
